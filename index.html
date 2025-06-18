@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,73 +7,67 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-color: #0a0a0a;
+      background-color: #F4F6F9;
       font-family: 'Inter', sans-serif;
+      color: #2C3E50;
     }
   </style>
 </head>
-<body class="text-gray-200 bg-black">
+<body class="bg-[#F4F6F9]">
 
-  <!-- Navbar -->
-  <header class="bg-purple-900 text-white p-5 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Anjali Kumari</h1>
-      <nav>
-        <a href="#about" class="ml-6 hover:underline">About</a>
-        <a href="#projects" class="ml-6 hover:underline">Projects</a>
-        <a href="#publications" class="ml-6 hover:underline">Publications</a>
-        <a href="#thesis" class="ml-6 hover:underline">Thesis</a>
-        <a href="#contact" class="ml-6 hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-white via-[#F4F6F9] to-white py-16 px-6 text-center">
+    <img src="https://undraw.co/api/illustrations/f4b1b29c-20d8-4d6c-88d2-4b6f271d7085" alt="Data Science Illustration" class="mx-auto w-64 mb-6" />
+    <h1 class="text-4xl font-bold text-[#4B6C8F] mb-4">Anjali Kumari</h1>
+    <p class="text-xl">Data Analyst & AI Researcher with a passion for solving complex challenges using machine learning & data insights.</p>
+  </section>
 
   <!-- About -->
-  <section id="about" class="py-12 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-purple-300 mb-4">About Me</h2>
-    <div class="flex items-center space-x-6">
-      <img src="assets/anjali_photo.jpg" alt="Anjali Kumari" class="w-32 h-32 rounded-full object-cover shadow-md" />
-      <p class="text-lg max-w-prose">
-        Dynamic and detail-oriented Data Analyst with a strong foundation through bachelor’s in computer science and a specialized MSc in Data Analytics. Experienced in AI research through an internship at Utrecht University, where I contributed to machine learning projects. Additionally, worked as an Assistant Engineer at the University of Sheffield’s AMRC, gaining hands-on experience in data-driven problem-solving for advanced manufacturing. Skilled in statistical analysis, machine learning, and data visualization, with a passion for leveraging AI to drive innovation. Adept at collaborating in research and industrial settings to develop data-driven solutions. Always eager to learn and apply analytical expertise to solve complex challenges.
+  <section id="about" class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#4B6C8F] mb-6">About Me</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <img src="assets/anjali_photo.jpg" alt="Anjali Kumari" class="w-48 h-48 rounded-full object-cover shadow-md mx-auto" />
+      <p class="text-lg">
+        I'm a detail-oriented Data Analyst with a strong academic foundation in Computer Science and Data Analytics. I have hands-on experience from internships and roles at Utrecht University and the AMRC, blending statistical methods, AI, and business understanding to deliver real-world solutions.
       </p>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-gray-900 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-purple-300 mb-6">Projects</h2>
-      <ul class="list-disc ml-6 text-lg space-y-3">
-        <li><a href="projects/project1/index.html" class="text-purple-400 underline hover:text-purple-300">Project</a></li>
-        <li><a href="projects/project2/index.html" class="text-purple-400 underline hover:text-purple-300">Project 2</a></li>
-        <li><a href="projects/project3/index.html" class="text-purple-400 underline hover:text-purple-300">Project 3</a></li>
-        <li><a href="projects/project4/index.html" class="text-purple-400 underline hover:text-purple-300">Project 4</a></li>
-        <li><a href="projects/project5/index.html" class="text-purple-400 underline hover:text-purple-300">Project 5</a></li>
-      </ul>
+  <section id="projects" class="bg-white py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-[#4B6C8F] mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="projects/project1/index.html" class="p-4 border rounded-lg shadow hover:shadow-lg transition text-blue-600">Project 1</a>
+        <a href="projects/project2/index.html" class="p-4 border rounded-lg shadow hover:shadow-lg transition text-blue-600">Project 2</a>
+        <a href="projects/project3/index.html" class="p-4 border rounded-lg shadow hover:shadow-lg transition text-blue-600">Project 3</a>
+        <a href="projects/project4/index.html" class="p-4 border rounded-lg shadow hover:shadow-lg transition text-blue-600">Project 4</a>
+        <a href="projects/project5/index.html" class="p-4 border rounded-lg shadow hover:shadow-lg transition text-blue-600">Project 5</a>
+      </div>
     </div>
   </section>
 
   <!-- Publications -->
-  <section id="publications" class="py-12 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-purple-300 mb-6">Publications</h2>
-    <ul class="list-disc ml-5 space-y-3 text-lg">
+  <section id="publications" class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#4B6C8F] mb-6">Publications</h2>
+    <ul class="space-y-4 text-lg">
       <li>
-        <a href="https://doi.org/10.1109/TENCON.2019.8929434" class="text-purple-400 underline hover:text-purple-300" target="_blank">
+        <a href="https://doi.org/10.1109/TENCON.2019.8929434" class="text-blue-600 underline hover:text-blue-800" target="_blank">
           TENCON 2019 – IEEE Conference Publication
         </a>
       </li>
       <li>
-        <a href="https://www.researchgate.net/publication/334385316" class="text-purple-400 underline hover:text-purple-300" target="_blank">
-          Ransomware Attack Protection: A Cryptographic Approach (PDF available later)
+        <a href="https://www.researchgate.net/publication/334385316" class="text-blue-600 underline hover:text-blue-800" target="_blank">
+          Ransomware Attack Protection: A Cryptographic Approach
         </a>
       </li>
     </ul>
   </section>
 
   <!-- Thesis -->
-  <section id="thesis" class="bg-gray-900 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-purple-300 mb-6">Thesis</h2>
+  <section id="thesis" class="bg-white py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-[#4B6C8F] mb-6">Thesis</h2>
       <p class="text-lg">
         <strong>Title:</strong> Speech Intelligibility for Movie Footages<br/>
         <em>Details, code, images, and PDF will be added soon.</em>
@@ -83,20 +76,17 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-12 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-purple-300 mb-6">Contact</h2>
-    <p class="mt-4">
-      <a href="assets/AKumari.pdf" target="_blank" 
-        class="text-purple-400 underline hover:text-purple-300">
-        📄 Download My Resume (PDF)
-      </a>
+  <section id="contact" class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#4B6C8F] mb-6">Contact</h2>
+    <p class="mb-2">
+      📄 <a href="assets/AKumari.pdf" target="_blank" class="text-blue-600 underline hover:text-blue-800">Download My Resume (PDF)</a>
     </p>
-    <p class="text-lg">Email: <a href="mailto:anjali.22kumari07@gmail.com" class="text-purple-400 underline hover:text-purple-300">anjali.22kumari07@gmail.com</a></p>
-    <p class="text-lg">GitHub: <a href="https://github.com/AnjaliK2207" class="text-purple-400 underline hover:text-purple-300">AnjaliK2207</a></p>
-    <p class="text-lg">LinkedIn: <a href="https://linkedin.com/in/anjali-kumari-971bb417a" class="text-purple-400 underline hover:text-purple-300">anjali-kumari-971bb417a</a></p>
+    <p class="text-lg">📧 Email: <a href="mailto:anjali.22kumari07@gmail.com" class="text-blue-600 underline hover:text-blue-800">anjali.22kumari07@gmail.com</a></p>
+    <p class="text-lg">💻 GitHub: <a href="https://github.com/AnjaliK2207" class="text-blue-600 underline hover:text-blue-800">AnjaliK2207</a></p>
+    <p class="text-lg">🔗 LinkedIn: <a href="https://linkedin.com/in/anjali-kumari-971bb417a" class="text-blue-600 underline hover:text-blue-800">anjali-kumari-971bb417a</a></p>
   </section>
 
-  <footer class="bg-purple-900 text-white text-center py-4 mt-12">
+  <footer class="bg-[#4B6C8F] text-white text-center py-6 mt-12">
     © 2025 Anjali Kumari. All rights reserved.
   </footer>
 
